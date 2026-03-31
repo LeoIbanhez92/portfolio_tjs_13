@@ -616,7 +616,7 @@ footer {
 }
 
 /* ========================================
-   RESPONSIVIDADE - TABLETS (até 1024px)
+    RESPONSIVIDADE - TABLETS (até 1024px)
 ======================================== */
 
 @media screen and (max-width: 1024px) {
@@ -657,11 +657,6 @@ footer {
     }
 
     /* Header - Oculta menu em telas pequenas */
-    @media (max-width: 768px) {
-        .menu-list {
-            display: none;
-        }
-    }
 
     /* Hero */
     .hero-container {
@@ -812,8 +807,14 @@ footer {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .menu-list {
+        display: none;
+    }
+}
+
 /* ========================================
-RESPONSIVIDADE - MOBILE (até 480px)
+    RESPONSIVIDADE - MOBILE (até 480px)
 ======================================== */
 
 @media screen and (max-width: 480px) {
