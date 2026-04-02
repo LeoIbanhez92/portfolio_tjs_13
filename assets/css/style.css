@@ -75,7 +75,9 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: var(--white);
+    background: linear-gradient(120deg, #181c2b 0%, #232946 60%, #2d1b4d 100%);
+    min-height: 100vh;
+    position: relative;
     line-height: 1.6;
     color: var(--black);
 }
@@ -158,7 +160,7 @@ header {
     z-index: 1000;
     width: 100%;
     height: 5rem;
-    border-bottom: var(--spacing-xs) solid var(--gray-200);
+    /* border-bottom removida para teste */
     box-shadow: var(--shadow-sm);
     background-color: var(--purple-800);
 }
@@ -166,11 +168,12 @@ header {
 header a {
     font-weight: 600;
     color: var(--white);
-    transition: color 0.3s ease;
+    transition: color 0.3s;
 }
 
 header a:hover {
-    color: var(--purple-100);
+    color: var(--purple-300);
+    text-shadow: 0 0 12px #5233ff80;
 }
 
 #titulo {
@@ -229,7 +232,7 @@ header a:hover {
 .about-content p,
 .contact-info p {
     font-size: var(--text-lg);
-    color: var(--gray-400);
+    color: var(--white);
 }
 
 .hero-image {
@@ -271,7 +274,11 @@ header a:hover {
     gap: var(--spacing-2xl);
     margin: var(--spacing-2xl) auto;
     border-radius: var(--radius-lg);
-    background-color: var(--gray-200);
+    background: var(--purple-800);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.10);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.18);
 }
 
 .about-image {
@@ -280,7 +287,7 @@ header a:hover {
 
 .about-image img {
     width: 100%;
-    border: 0.35rem solid var(--purple-500);
+    border: 0.35rem solid #ffe066;
     border-radius: var(--radius-full);
     box-shadow: var(--shadow-lg);
 }
@@ -291,7 +298,7 @@ header a:hover {
     margin-bottom: var(--spacing-md);
     font-size: var(--text-3xl);
     font-weight: 700;
-    color: var(--purple-800);
+    color: var(--white);
 }
 
 .about-content p {
@@ -390,10 +397,12 @@ header a:hover {
 
 .project-content {
     display: flex;
-    flex: 1;
+    flex: 1 1 auto;
     flex-direction: column;
+    justify-content: space-between;
     padding: var(--spacing-md);
     text-align: left;
+    height: 100%;
 }
 
 .project-content h3 {
@@ -428,7 +437,7 @@ header a:hover {
     justify-content: center;
     align-items: center;
     gap: 0.75rem;
-    margin-top: var(--spacing-sm);
+    margin-top: auto;
 }
 
 /* Configuração do Swiper */
@@ -452,7 +461,7 @@ header a:hover {
 .swiper-button-next:after,
 .swiper-button-prev:after {
     font-size: var(--text-lg);
-    color: var(--purple-500);
+    color: var(--white);
 }
 
 .swiper-button-next:hover:after,
@@ -503,11 +512,21 @@ header a:hover {
     height: 5rem;
     padding: 0.75rem;
     border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: var(--transition-default);
 }
 
 .social-icon img {
     width: 100%;
+    height: 100%;
+    max-width: 3.5rem;
+    max-height: 3.5rem;
+    min-width: 2.5rem;
+    min-height: 2.5rem;
+    object-fit: contain;
+    aspect-ratio: 1/1;
     filter: brightness(0) saturate(100%);
     transition: filter 0.3s ease;
 }
@@ -561,7 +580,7 @@ form span {
 
 footer {
     padding: 2.5rem;
-    background: linear-gradient(to right, var(--purple-500), var(--purple-800));
+    background: var(--purple-800);
     font-weight: 600;
     text-align: center;
     color: var(--white);
@@ -615,6 +634,11 @@ footer {
     filter: brightness(0) saturate(100%) invert(11%) sepia(69%) saturate(3759%) hue-rotate(256deg) brightness(101%) contrast(96%);
 }
 
+.success-title {
+    color: #fff !important;
+    text-shadow: 0 0 8px #5233ff, 0 0 16px #5233ff80, 0 0 32px #ff3a8280;
+}
+
 /* ========================================
    RESPONSIVIDADE - TABLETS (até 1024px)
 ======================================== */
@@ -657,11 +681,6 @@ footer {
     }
 
     /* Header - Oculta menu em telas pequenas */
-    @media (max-width: 768px) {
-        .menu-list {
-            display: none;
-        }
-    }
 
     /* Hero */
     .hero-container {
@@ -809,6 +828,12 @@ footer {
     .success-icon img {
         width: 5rem;
         height: 5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu-list {
+        display: none;
     }
 }
 
@@ -1027,4 +1052,63 @@ RESPONSIVIDADE - MOBILE (até 480px)
         padding: 0.75rem var(--spacing-lg);
     }
 
+}
+
+/* Destaques amarelos na seção About */
+.destaque {
+    color: #ffe066;
+    font-size: inherit;
+}
+
+/* Botão GitHub amarelo na About */
+.about-container .botao {
+    background-color: #ffe066;
+    border-color: #ffe066;
+    color: #222;
+}
+.about-container .botao:hover {
+    background-color: #e6b800;
+    border-color: #e6b800;
+    color: #222;
+}
+
+/* Botão Currículo (outline) amarelo discreto na About */
+.about-container .botao-outline {
+    background-color: transparent;
+    border-color: #ffe066;
+    color: #ffe066;
+}
+.about-container .botao-outline:hover {
+    background-color: #ffe06622;
+    border-color: #e6b800;
+    color: #e6b800;
+}
+
+/* Números amarelos e rótulos brancos na About */
+.about-container .data-number {
+    color: #ffe066;
+}
+.about-container .data-label {
+    color: #fff;
+}
+
+/* Títulos, textos e labels com efeito neon */
+.neon-title, .neon-label, .neon-text {
+    color: #fff;
+    text-shadow: 0 0 8px #5233ff, 0 0 16px #5233ff80, 0 0 32px #ff3a8280;
+}
+
+/* Efeito de rastro do mouse */
+.cursor-trail {
+    position: fixed;
+    pointer-events: none;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    background: radial-gradient(circle, #ffe066 60%, #6b36c8 100%);
+    box-shadow: 0 0 16px 4px #ffe06680, 0 0 32px 8px #6b36c880;
+    opacity: 0.7;
+    z-index: 9999;
+    transform: translate(-50%, -50%) scale(1);
+    transition: opacity 0.4s, transform 0.4s;
 }

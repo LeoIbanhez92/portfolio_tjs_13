@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
@@ -10,29 +10,35 @@
     <!-- Fonte do Google - Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Leonardo Ibanhez" />
-    <meta name="description" content="Portfólio Pessoal do Leonardo Ibanhez,
-                desenvolvedor Full Stack especializado em criar experiências
-                digitais incríveis. Conheça meus projetos e entre em contato." />
-    <meta name="robots" content="index, follow" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Leonardo Ibanhez">
+    <meta name="description" content="Portfólio Pessoal do Leonardo Ibanhez, 
+                desenvolvedor Full Stack especializado em criar experiências 
+                digitais incríveis. Conheça meus projetos e entre em contato.">
+    <meta name="robots" content="index, follow">
 
-    <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg">
+
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- CSS principal da página -->
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <title>Portfólio do Leonardo</title>
 </head>
 
 <body>
+    <!-- Fundo animado removido -->
 
-    <!-- CABEÇALHO DA PAGINA-->
+    <!-- Cabeçalho da página -->
+
     <header>
         <div class="menu-content">
-            <!-- TITULO DO CABEÇALHO-->
+            <!-- Título do Cabeçalho -->
             <a href="index.html" id="titulo">Portfólio</a>
-
-            <!-- MENU DE NAVEGAÇÃO-->
+            <!-- Menu de Navegação -->
             <nav>
                 <ul class="menu-list">
                     <li><a href="#hero">Início</a></li>
@@ -42,226 +48,129 @@
                 </ul>
             </nav>
         </div>
-
     </header>
 
-    <!--SEÇÃAO PRINCIPAL DA PÁGINA-->
+    <!-- Seção Principal da página -->
     <main>
 
-        <!-- SEÇÃO HERO-->
+        <!-- Seção Hero -->
         <section id="hero" class="section-container hero-container">
 
-            <!--BOAS VINDAS-->
+            <!-- Boas Vindas -->
             <article class="hero-content">
-
-                <span>👋🏼 Olá, eu sou o Leonardo</span>
-
-                <h1>Desenvolvedor Full Stack</h1>
-
-                <p>Transformo ideias em,
-                    códigos e crio experiências digitais incríveis</p>
+                <span class="neon-text">👋 Olá, eu sou o Leonardo</span>
+                <h1 class="neon-title">Desenvolvedor Full Stack</h1>
+                <p class="neon-text">Transformo ideias em,<br>código e crio experiências digitais incríveis.</p>
 
                 <div class="buttons-container">
-
                     <a href="#contact" class="botao">Entre em contato</a>
-
                     <a href="#about" class="botao-outline">Saiba mais...</a>
                 </div>
-
             </article>
 
-            <!-- iMAGEM DA SEÇÃO HERO-->
-
+            <!-- Imagem da Seção Hero -->
             <figure class="hero-image">
-
-                <img src="./assets/img/foto_dev_man.svg" alt="Foto do autor do site" class="float-animation">
-
+                <img src="./assets/img/leonardo_avatar.png" alt="Foto do autor do site" class="float-animation">
             </figure>
         </section>
 
-        <!-- SEÇÃO ABOUT-->
+        <!-- Seção About -->
         <section id="about" class="section-container about-container">
 
-            <!-- iMAGEM DA SEÇÃO ABOUT-->
 
-            <figure class="about-image">
-
-                <img src="./assets/img/avatar_dev_man.svg" alt="Foto do perfil do autor">
-
-            </figure>
-
-                <!-- CONTEÚDO DA SEÇÃO ABOUT-->
-                <article class="about-content">
-                    <h2>Sobre mim</h2>
-
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Assumenda aliquam dicta cum quos architecto incidunt modi,
-                        ut esse nemo rerum ea quasi quisquam, autem laboriosam.
-                        Perspiciatis sint esse minus doloribus!
-                    </p>
-
-                    <p>
-                        Mussum Ipsum, cacilds vidis litro abertis. Em pé sem cair,
-                        deitado sem dormir, sentado sem cochilar e fazendo pose.
-                        In elementis mé pra quem é amistosis quis leo. Negão é teu passadis,
-                        eu sou faxa pretis. Suco de cevadiss deixa as pessoas mais interessantis.
-                    </p>
-
-                    <!-- LINKS (GITHUB + CURRÍCULO) E DADOS DO GITHUB-->
-
-                    <div class="about-buttons-data">
-                        <div class="buttons-container">
-                            <a href="#" target="_blank" class="botao">GitHub</a>
-                            <a href="#" target="_blank" class="botao-outline">Currículo</a>
-                        </div>
-
-                        <!-- DADOS-->
-
-                        <div class="data-container">
-
-                            <!-- SEGUIDORES-->
-                            <div class="data-item">
-                                <span class="data-number">100</span>
-                                <span class="data-label">Seguidores</span>
-                            </div>
-
-                            <!-- REPOSITÓRIOS PÚBLICOS -->
-                            <div class="data-item">
-                                <span class="data-number">10</span>
-                                <span class="data-label">Repositório</span>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </article>
 
         </section>
 
-        <!-- SEÇÃO PROJECTS-->
+        <!-- Seção Projects -->
         <section id="projects" class="section-container projects-container">
 
-            <h2>Meus Projetos</h2>
+            <h2 class="neon-title">Meus Projetos</h2>
 
-            <!--SWIPER CONTAINER-->
-
-            <div class="swiper project-swiper">
-
+            <!-- Swiper Container -->
+            <div class="swiper projects-swiper">
                 <div class="swiper-wrapper">
-
-                    <div class="swiper-slide">
-
-                        <article class="project-card">
-
-                            <!-- ÏCONE DA TECNOLOGIA PADRÃO DO PROJETO-->
-                            <figure class="project-image">
-                                <img src="./assets/icons/languages/github.svg" alt="Ícone do GitHub">
-
-                            </figure>
-
-                            <!--CONTEÚDO DO PROJETO-->
-                            <div class="project-content">
-
-                                <h3>Projeto GitHub</h3>
-                                <p>Projeto desenvolvido no GitHub</p>
-
-                                <!--TAGS DO PROJETO-->
-                                <div class="project-tags">
-                                    <span class="tag">GitHub</span>
-                                </div>
-
-                                <!--LINKS DO PROJETO-->
-                                <div class="project-buttons">
-                                    <a href="#" target="_blank" class="botao botao-sm">
-                                        GitHub
-                                    </a>
-
-                                    <a href="#" target="_blank" class="botao-outline botao-sm">
-                                        Deploy
-                                    </a>
-                                </div>
-
-                            </div>
-
-                        </article>
-
-                    </div>
 
                 </div>
 
-                <!--BOTÕES DE NAVEGAÇÃO-->
+                <!-- Botões de Navegação -->
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
 
-                <!--PAGINAÇÃO-->
-
+                <!-- Paginação -->
                 <div class="swiper-pagination"></div>
 
             </div>
 
         </section>
 
-        <!-- SEÇÃO CONTACT-->
+        <!-- Seção Contact -->
         <section id="contact" class="section-container contact-container">
 
-            <!--REDES SOCIAIS-->
+            <!-- Redes Sociais -->
             <article class="contact-info">
 
-                <h2>Entre em contato</h2>
-                <p>Sinta-se à vontade para entrar em contato comigo!</p>
+                <h2 class="neon-title">Entre em contato</h2>
+                <p class="neon-text">Sinta-se à vontade para entrar em contato comigo!</p>
 
+                <!-- Links para as Redes Sociais -->
                 <div class="social-container">
-                    <a href="#" target="_blank" class="social-icon" aria-label="Linkedin">
-                        <img src="./assets/icons/social/linkedin.svg" alt="Link para o GitHub">
+                    <a href="https://www.linkedin.com/in/leonardoibanhez/" target="_blank" class="social-icon"
+                        aria-label="Linkedin">
+                        <img src="./assets/icons/social/linkedin.svg" alt="Link para o LinkedIn">
                     </a>
 
-                    <a href="#" target="_blank" class="social-icon" aria-label="GitHub">
+                    <a href="https://github.com/LeoIbanhez92" target="_blank" class="social-icon" aria-label="GitHub">
                         <img src="./assets/icons/social/github.svg" alt="Link para o GitHub">
                     </a>
 
-                    <a href="#" target="_blank" class="social-icon" aria-label="Instagram">
-                        <img src="./assets/icons/social/instagram.svg" alt="Link para o Instagram">
+                    <a href="https://wa.me/5521979378864?text=Olá%20Leonardo,%20vi%20seu%20portfólio!" target="_blank" class="social-icon"
+                        aria-label="whatsapp">
+                        <img src="./assets/icons/social/whatsapp.svg" alt="Link para o whatsapp">
                     </a>
-
                 </div>
 
             </article>
 
-            <!-- FORMULÁRIO DE CONTATO-->
+            <!-- Formulário de Contato -->
+            <form id="formulario" action="https://formsubmit.co/faea7f01003dda6007f182b0282f54af" method="POST">
 
-            <form id="formulario">
+                <input type="hidden" name="_next" value="http://localhost:5500/success.html">
+                <input type="hidden" name="_captcha" value="false">
 
-                <label for="nome">Nome</label>
+                <label for="nome" class="neon-label">Nome</label>
                 <input id="nome" name="nome" type="text" placeholder="Digite o seu nome completo">
                 <span id="erro-nome"></span>
 
-                <label for="email">E-mail</label>
-                    <input id="email" name="email" type="text" placeholder="Digite o seu e-mail ">
-                    <span id="erro-email""></span>
+                <label for="email" class="neon-label">E-mail</label>
+                <input id="email" name="email" type="text" placeholder="Digite o seu e-mail">
+                <span id="erro-email"></span>
 
-                <label for="assunto">Assunto</label>
-                        <input id="assunto" name="assunto" type="text" placeholder="Digite o assunto da mensagem">
-                        <span id="erro-assunto""></span>
+                <label for="assunto" class="neon-label">Assunto</label>
+                <input id="assunto" name="assunto" type="text" placeholder="Digite o assunto da mensagem">
+                <span id="erro-assunto"></span>
 
-                <label for="mensagem">Mensagem</label>
-                            <textarea id="mensagem" name="mensagem" placeholder="Digite a sua mensagem"></textarea>
-                            <span id="erro-mensagem"></span>
+                <label for="mensagem" class="neon-label">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Digite a sua mensagem"></textarea>
+                <span id="erro-mensagem"></span>
 
+                <button class="botao" type="submit">Enviar Mensagem</button>
 
-                            <button class="botao" type="submit">Enviar Mensagem</button>
             </form>
 
         </section>
 
-
     </main>
 
-    <!--RODAPÉ DA PÁGINA-->
+    <!-- Rodapé da página -->
     <footer>
-
         Desenvolvido por Leonardo Ibanhez - 2026
-
     </footer>
+
+    <!-- SWIPER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Script JavaScript principal da página -->
+    <script src="./assets/js/script.js"></script>
 
 </body>
 
