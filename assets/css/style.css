@@ -1,3 +1,52 @@
+@media screen and (width: 360px) and (height: 740px) {
+    .project-tags {
+        gap: 0.2rem;
+        max-width: 90%;
+    }
+    .tag {
+        font-size: 0.65rem;
+        padding: 0.25rem 0.5rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    #titulo {
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+}
+@media screen and (min-width: 540px) and (max-width: 720px) {
+    #titulo {
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    #titulo {
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+}
+@media screen and (min-width: 540px) and (max-width: 720px) {
+    .project-content p {
+        font-size: 0.95rem;
+        max-height: 4.5rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-bottom: 1rem;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    .project-content p {
+        font-size: 0.95rem;
+        max-height: 4.5rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-bottom: 1rem;
+    }
+}
 /* Reset do Navegador */
 * {
     margin: 0;
@@ -67,8 +116,12 @@
 
 /* Configurações Básicas */
 
-html {
+
+html, body {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    width: 100vw;
+    max-width: 100vw;
 }
 
 body {
@@ -420,7 +473,9 @@ header a:hover {
 .project-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--spacing-xs)
+    gap: var(--spacing-xs);
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .tag {
@@ -842,10 +897,24 @@ RESPONSIVIDADE - MOBILE (até 480px)
 ======================================== */
 
 @media screen and (max-width: 480px) {
+    html, body {
+        overflow-x: hidden !important;
+        max-width: 100vw !important;
+    }
+        .project-content p {
+            flex: unset;
+            overflow: unset;
+        }
+    .project-tags {
+        margin-bottom: 0.75rem;
+    }
 
     /* Layout */
     .section-container {
         padding: var(--spacing-md) var(--spacing-sm);
+        max-width: 100vw;
+        overflow-x: hidden;
+        box-sizing: border-box;
     }
 
     /* Tipografia Mobile */
@@ -953,13 +1022,17 @@ RESPONSIVIDADE - MOBILE (até 480px)
         position: relative;
         margin: 0;
         padding: var(--spacing-sm) 0 2rem 0;
-        overflow: visible;
+        overflow-x: hidden;
+        max-width: 100vw;
+        box-sizing: border-box;
     }
 
     .project-card {
-        width: 100%;
+        width: 100vw;
+        max-width: 98vw;
+        min-width: 0;
         height: 20rem;
-        max-width: 20rem;
+        box-sizing: border-box;
     }
 
     .project-image {
