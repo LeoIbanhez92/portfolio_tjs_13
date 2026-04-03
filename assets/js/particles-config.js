@@ -1,0 +1,29 @@
+// particles.js config para fundo de partículas flutuantes
+particlesJS('particles-js', {
+    particles: {
+        number: { value: 60, density: { enable: true, value_area: 800 } },
+        color: { value: '#fff' },
+        shape: { type: 'circle' },
+        opacity: { value: 0.45, random: true },
+        size: { value: 6, random: true },
+        line_linked: { enable: false },
+        move: {
+            enable: true,
+            speed: 1.2,
+            direction: 'none',
+            random: true,
+            straight: false,
+            out_mode: 'out',
+            bounce: false
+        }
+    },
+    interactivity: {
+        detect_on: 'canvas',
+        events: {
+            onhover: { enable: false },
+            onclick: { enable: false },
+            resize: true
+        }
+    },
+    retina_detect: true
+});

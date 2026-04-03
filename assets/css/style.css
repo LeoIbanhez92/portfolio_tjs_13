@@ -1,3 +1,11 @@
+@keyframes neon-pulse {
+    0%, 100% {
+        box-shadow: 0 0 8px #5233ff, 0 0 16px #5233ff80, 0 0 32px #ff3a8280;
+    }
+    50% {
+        box-shadow: 0 0 24px #5233ff, 0 0 48px #5233ff80, 0 0 96px #ff3a8280;
+    }
+}
 @media screen and (width: 360px) and (height: 740px) {
     .project-tags {
         gap: 0.2rem;
@@ -9,6 +17,14 @@
     }
 }
 @media screen and (max-width: 480px) {
+    .social-icon {
+        animation: neon-pulse 1.5s infinite alternate;
+        box-shadow: 0 0 8px #5233ff, 0 0 16px #5233ff80, 0 0 32px #ff3a8280;
+        border-radius: 50%;
+    }
+    .social-icon img {
+        filter: brightness(0) invert(1);
+    }
     #titulo {
         text-align: center;
         width: 100%;
@@ -1130,7 +1146,9 @@ RESPONSIVIDADE - MOBILE (até 480px)
 /* Destaques amarelos na seção About */
 .destaque {
     color: #ffe066;
-    font-size: inherit;
+    font-size: inherit !important;
+    font-weight: 400 !important;
+    line-height: inherit !important;
 }
 
 /* Botão GitHub amarelo na About */

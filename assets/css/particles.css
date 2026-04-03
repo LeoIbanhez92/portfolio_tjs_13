@@ -1,0 +1,16 @@
+/* Estilo para o canvas de partículas */
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    filter: drop-shadow(0 0 8px #fff) drop-shadow(0 0 16px #fff8);
+    pointer-events: none;
+}
+
+body>*:not(#particles-js) {
+    position: relative;
+    z-index: 1;
+}

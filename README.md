@@ -1,114 +1,95 @@
-# Projeto Portfólio Pessoal
- 
----
- 
-<div align="center"> 
-<img src="https://img.shields.io/badge/HTML-5-orange?style=for-the-badge&logo=html5" alt="HTML Badge" /> 
-<img src="https://img.shields.io/badge/CSS-3-purple?style=for-the-badge&logo=css&logoColor=purple" alt="CSS Badge" /> 
-<img src="https://img.shields.io/badge/JavaScript-ES6+-yellow?style=for-the-badge&logo=javascript&logoColor=yellow%22 alt="JavaScript Badge" /> 
+# 🚀 Portfólio Leonardo Ibanhez
+
+<div align="center">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/Swiper-6332F6?style=for-the-badge&logo=swiper&logoColor=white" alt="Swiper.js" />
+  <img src="https://img.shields.io/badge/Particles.js-1A1A1A?style=for-the-badge&logo=javascript&logoColor=white" alt="Particles.js" />
 </div>
- 
-<br />
- 
-O **Projeto Portfólio Pessoal** é um **site profissional moderno**, desenvolvido com **HTML, CSS e JavaScript**, com o objetivo de apresentar informações sobre a pessoa desenvolvedora, seus projetos e formas de contato de maneira clara, interativa e responsiva.
- 
-O projeto consome dados dinâmicos da **API do GitHub**, permitindo que informações como perfil e repositórios sejam carregadas automaticamente, mantendo o conteúdo sempre atualizado.
- 
-------
- 
-## Funcionalidades
- 
-- Estrutura de páginas desenvolvida com **HTML semântico**
-- Estilização moderna com **CSS**, utilizando:
-  - Variáveis CSS
-  - Animações
-  - Layout responsivo (desktop, tablet e mobile)
-- Integração com a **API do GitHub** para:
-  - Exibição dinâmica das informações do perfil
-  - Listagem automática dos repositórios
-- Exibição dos projetos em **carrossel interativo** utilizando **Swiper.js**
-- **Formulário de contato com validação no frontend**, garantindo o correto preenchimento dos campos
-- Página dedicada de **confirmação de envio** do formulário
-- Navegação fluida com menu fixo e rolagem suave
-- Interface intuitiva e organizada, focada na experiência do usuário
- 
-------
- 
-## Estrutura do Projeto
- 
+
+---
+
+Bem-vindo ao meu portfólio! Este projeto foi desenvolvido para apresentar meus principais projetos, habilidades e formas de contato de maneira moderna, responsiva e interativa.
+
+---
+
+## ✨ Principais Destaques
+
+- **Design Responsivo** para desktop, tablet e mobile
+- **Fundo animado** com partículas flutuantes (Particles.js)
+- **Ícones sociais com efeito neon**
+- **Cursor customizado** para desktop
+- **Carrossel de projetos** com Swiper.js
+- **Seções dinâmicas**: Sobre mim, projetos (API do GitHub), contato validado
+- **Código limpo e organizado** (HTML, CSS, JS separados)
+
+---
+
+## 📂 Estrutura do Projeto
+
 ```
-portfolio/
-│
-├── index.html        # Página principal do portfólio
-├── success.html      # Página de confirmação de envio do formulário
-│
-├── assets/
-│   ├── css/
-│   │   └── styles.css    # Estilos e responsividade
-│   ├── js/
-│   │   └── scripts.js   # Integração com GitHub, carrossel e validações
-│   ├── img/             # Imagens e ilustrações
-│   └── icons/           # Ícones das linguagens e redes sociais
-│
-└── README.md
+index.html
+success.html
+assets/
+  css/
+    style.css
+    particles.css
+  js/
+    script.js
+    particles-config.js
+    custom-cursor.js
+  img/
+  icons/
+    languages/
+    social/
+  docs/
+    curriculum/
 ```
- 
-------
- 
-## Tecnologias Utilizadas
- 
-- **HTML5**: Estruturação semântica do conteúdo
-- **CSS3**: Estilização, layout responsivo e animações
-- **JavaScript (ES6+)**: Interatividade, consumo de APIs e validações
-- **Swiper.js**: Carrossel de projetos responsivo
-- **Fom Submit:** Serviço de envio de e-mails via formulário HTML
-- **GitHub API**: Fonte dinâmica de dados do perfil e repositórios
- 
-------
- 
-## Executando Localmente
- 
-Para executar o projeto em ambiente local, siga os passos abaixo.
- 
-### Pré-requisitos
- 
-- [Visual Studio Code](https://code.visualstudio.com/) (ou outro editor de sua preferência)
-- Extensão **Live Server** instalada no VS Code
- 
-### Passos
- 
-1. Clone o repositório:
- 
-   ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
-   ```
- 
-2. Acesse a pasta do projeto:
- 
-   ```bash
-   cd seu-repositorio
-   ```
- 
-3. Abra o projeto no Visual Studio Code:
- 
-   ```bash
-   code .
-   ```
- 
-4. Abra o arquivo `index.html`, clique com o botão direito e selecione **"Open with Live Server"**.
- 
-O site será aberto no navegador e todas as alterações poderão ser visualizadas em tempo real.
- 
-------
- 
-## Deploy
- 
-Este site está disponível publicamente através do **GitHub Pages**. Você pode acessar a versão online pelo link abaixo:
- 
-🔗 https://seu-usuario.github.io/seu-repositorio
- 
-------
- 
-## Contribuições
- 
-Contribuições são bem-vindas. Caso tenha sugestões de melhorias, correções ou novas funcionalidades, sinta-se à vontade para abrir uma **issue** ou enviar um **pull request**.
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- HTML5, CSS3 (Flexbox, Grid, Media Queries)
+- JavaScript (ES6+)
+- Swiper.js (carrossel de projetos)
+- Particles.js (efeito de partículas)
+- Google Fonts (Poppins)
+
+---
+
+## 🎨 Visual
+
+- Paleta de cores: Roxo, amarelo neon, branco e tons escuros
+- Animações suaves e efeitos de brilho
+- Layout centralizado e espaçamento confortável
+
+---
+
+## 📱 Responsividade
+
+O portfólio foi testado e ajustado para diferentes resoluções, garantindo ótima experiência em:
+- Celulares (iOS/Android)
+- Tablets
+- Desktops
+
+---
+
+## 🤝 Contato
+
+- [LinkedIn](https://www.linkedin.com/in/leonardoibanhez/)
+- [GitHub](https://github.com/LeoIbanhez92)
+- E-mail: leonardoibanhez@gmail.com
+
+---
+
+## 📝 Licença
+
+Este projeto é open-source e você pode se inspirar à vontade!
+
+---
+
+> Feito com dedicação, criatividade e muito café ☕
+
+![Badge](https://img.shields.io/badge/Feito%20por-Leonardo%20Ibanhez-5233ff?style=flat-square&logo=github)
